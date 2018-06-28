@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Instance" max_length="40" name="x_30459_git_backup_instance" type="collection">
+        <element label="description" max_length="80" name="description" type="string"/>
+        <element label="location" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element label="name" max_length="40" name="name" type="string"/>
+        <element label="owner" max_length="32" name="owner" reference="core_company" type="reference"/>
+        <element label="type" max_length="40" name="type" type="string"/>
+        <element label="url" max_length="128" name="url" type="string"/>
+        <index name="index">
+            <element name="owner"/>
+        </index>
+        <index name="index2">
+            <element name="location"/>
+        </index>
+    </element>
+</database>
